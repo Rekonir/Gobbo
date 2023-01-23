@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.paralax {
+  pointer-events: none;
+}
+.paralax .paralax__fon1,
+.paralax .paralax__fon2 {
+  width: 105vw;
+  height: 105vh;
+  position: fixed;
+  top: -5vh;
+  right: -2.5vw;
+  bottom: -5vh;
+  left: -2.5vw;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.paralax .paralax__fon1 {
+  background: url(/file/fon1.jpg);
+}
+.paralax .paralax__fon2 {
+  background: url(/file/fon2.png);
+}
+
+.content {
+  position: relative;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content .chooser {
+  box-sizing: border-box;
+  width: 33.75vh;
+  height: 45vh;
+  background: url(/file/back-scroll.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 70px 30px;
+}
+
+/*# sourceMappingURL=paralax.css.map */
