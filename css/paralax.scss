@@ -2,6 +2,12 @@ body {
     margin: 0;
     padding: 0;
 }
+h3 {
+    font-size: 14px;
+    font-family: "Orpheus", "Times New Roman", serif;
+    margin: 0;
+    padding: 0;
+}
 .paralax {
     pointer-events: none;
     .paralax__fon1,
@@ -41,5 +47,23 @@ body {
         background-size: contain;
         background-repeat: no-repeat;
         padding: 70px 30px;
+        .chooser__sliders {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+            flex-direction: column;
+            .slider__box {
+                width: 100%;
+                text-align: center;
+            }
+        }
+        .chooser__result {
+            margin-top: 100px;
+            color: white;
+            border: 1px solid white;
+        }
     }
 }
