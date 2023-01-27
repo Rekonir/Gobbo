@@ -3,10 +3,18 @@ body {
     padding: 0;
 }
 h3 {
-    font-size: 14px;
-    font-family: "Orpheus", "Times New Roman", serif;
+    font-size: 20px;
+    font-family: "Times New Roman", serif;
     margin: 0;
     padding: 0;
+}
+p {
+    font-size: 14px;
+    font-family: "Times New Roman", serif;
+    margin: 0;
+    padding: 10px;
+    line-height: 28px;
+    text-decoration: underline;
 }
 .paralax {
     pointer-events: none;
@@ -39,31 +47,40 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    .chooser {
-        box-sizing: border-box;
-        width: 33.75vh;
-        height: 45vh;
-        background: url(/file/back-scroll.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        padding: 70px 30px;
+    .chooser {display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
         .chooser__sliders {
             display: flex;
-            width: 100%;
-            height: 100%;
+            box-sizing: border-box;
+            width: 28vw;
+            height: 65vh;
+            background: url(/file/back-scroll.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding: 30px;
             align-items: center;
             justify-content: center;
-            gap: 25px;
+            gap: 30px;
             flex-direction: column;
             .slider__box {
-                width: 100%;
+                width: 95%;
                 text-align: center;
             }
         }
         .chooser__result {
-            margin-top: 100px;
-            color: white;
-            border: 1px solid white;
+            min-width: 33.75vh;
+            min-height: 25vh;
+            background: url(/file/Result.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
         }
     }
 }

@@ -1,4 +1,7 @@
 $(function () {
+    var checkWarcry = $('#Warcry')
+    var result = $('#result')
+
     var sliderShoot = $('.slider')[0];
     noUiSlider.create(sliderShoot, {
         start: [1, 10],
@@ -65,9 +68,6 @@ $(function () {
             'max': 10
         }
     })
-    var checkWarcry = $('#Warcry')
-    var result = $('.chooser__result')[0].innerHTML
-
 
     //База фракций//
     const BEASTS_OF_CHAOS = {
@@ -137,23 +137,22 @@ $(function () {
 
     }
     const WarcryFraction = [BEASTS_OF_CHAOS, BLADES_OF_KHORNE_DAEMONS, BLADES_OF_KHORNE_BLOODBOUND, DISCIPLES_OF_TZEENTCH_DAEMONS, DISCIPLES_OF_TZEENTCH_ARCANITES, IRON_GOLEM]
-    console.log(WarcryFraction[5].Warcry)
 
     // Обработка фильтров//
-    var ShootMin = 1
+    var ShootMin = 2
     var ShootMax = 10
+    var str = ''
     var ShootAll = [ShootMin, ShootMax]
     sliderShoot.noUiSlider.on('change', (values, handle) => {
         ShootAll[handle] = Number(values[handle]),
             console.log(ShootAll)
-        for (var i = 0; i = WarcryFraction.length; i++) {
-            //if (WarcryFraction[i].Shoot <= ShootMax || WarcryFraction[i].Shoot >= ShootMin){
-            console.log(WarcryFraction[i])
-
+        for (var i = 0; i < WarcryFraction.length; i++) {
+            if (WarcryFraction[i].Shoot >= ShootAll[0] && WarcryFraction[i].Shoot <= ShootAll[1]) {
+                str += `${WarcryFraction[i].Name} <br>`
+            }; result.html(str);
         }
-
+        str = ''
     })
-
     var HtHMin = 3
     var HtHMax = 9
     var HtHAll = [HtHMin, HtHMax]
@@ -194,3 +193,4 @@ $(function () {
             console.log(VarietyAll)
     })
 })
+
