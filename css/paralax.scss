@@ -47,15 +47,16 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    .chooser {display: flex;
+    .chooser {
+        display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         .chooser__sliders {
             display: flex;
             box-sizing: border-box;
-            width: 28vw;
-            height: 65vh;
+            width: 380px;
+            height: 500px;
             background: url(/file/back-scroll.png);
             background-size: contain;
             background-repeat: no-repeat;
@@ -84,3 +85,4 @@ p {
         }
     }
 }
+

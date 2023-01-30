@@ -6,39 +6,42 @@ html(lang="ru")
     link(rel="icon", href="/file/Icon.png")
     link(rel="stylesheet", href="/css/paralax.css")
     link(rel="stylesheet", href="/lib/slider/nouislider.css")
-    script(src="/js/jQ.js")
-    script(src="/js/paralax.js")
+    script(src="/lib/jQ/jQ.js")
     script(src="/lib/slider/nouislider.min.js")
+    script(src="/lib/lodash/lodash.js")
+    script(src="/js/paralax.js")
     script(src="/js/slider.js")
+
   body
     .paralax
-        .paralax__fon1.fon(speed="3")
-        .paralax__fon2.fon(speed="12")
+      .paralax__fon1.fon(speed="3")
+      .paralax__fon2.fon(speed="12")
     .content
-        .chooser
-            .chooser__sliders
-                .slider__box
-                  h3 Стрельба
-                  .slider#Shoot
-                .slider__box
-                  h3 Ближний бой
-                  .slider#HtH
-                .slider__box
-                  h3 Живучесть
-                  .slider#Wound
-                .slider__box
-                  h3 Скорость
-                  .slider#Move
-                .slider__box
-                  h3 Размер банды
-                  .slider#Size
-                .slider__box
-                  h3 Разнообразие воинов
-                  .slider#Variety
-                .slider__box
-                  label(for="WarcryCheck") Включать банды Warcry?
-                  input(type="checkbox", name="WarcryCheck")#Warcry
-            .chooser__result 
-              p#result 1111111111
-
+      .chooser
+        .chooser__sliders
+          .slider__box
+            h3 Стрельба
+            .slider#Shoot
+          .slider__box
+            h3 Ближний бой
+            .slider#HtH
+          .slider__box
+            h3 Живучесть
+            .slider#Wound
+          .slider__box
+            h3 Скорость
+            .slider#Move
+          .slider__box
+            h3 Размер банды
+            .slider#Size
+          .slider__box
+            h3 Разнообразие воинов
+            .slider#Variety
+          .slider__box
+            label(for="WarcryCheck") Включать банды Warcry?
+            input(type="checkbox", name="WarcryCheck")#Warcry
+        .chooser__result 
+          p#result 1111111111
         
+
+
