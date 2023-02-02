@@ -7,6 +7,7 @@ h3 {
     font-family: "Times New Roman", serif;
     margin: 0;
     padding: 0;
+    cursor: default;
 }
 p {
     font-size: 14px;
@@ -51,7 +52,7 @@ p {
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
+        flex-direction: row;
         .chooser__sliders {
             display: flex;
             box-sizing: border-box;
@@ -71,18 +72,40 @@ p {
             }
         }
         .chooser__result {
-            min-width: 33.75vh;
-            min-height: 25vh;
+            box-sizing: border-box;
+            width: 380px;
+            height: 550px;
+            padding-top: 40px;
+            padding-bottom: 40px;
             background: url(/file/Result.png);
             background-size: contain;
             background-repeat: no-repeat;
-            padding-top: 10px;
-            padding-bottom: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
+            overflow-y: auto;
+            .result__box {
+                box-sizing: border-box;
+                max-width: 380px;
+                max-height: 470px;
+                .result {
+                    max-width: 380px;
+                    max-height: 470px;
+                }
+            }
         }
     }
 }
-
+.chooser__result::-webkit-scrollbar {
+    width: 12px; /* ширина scrollbar */
+}
+.chooser__result::-webkit-scrollbar-track {
+    background: rgb(201,175,113);
+    border-radius: 200px; /* цвет дорожки */
+}
+.chooser__result::-webkit-scrollbar-thumb {
+    background-color: rgb(46,18,41); /* цвет плашки */
+    border-radius: 200px; /* закругления плашки */
+    border: 1px solid rgb(126,89,5); /* padding вокруг плашки */
+}
