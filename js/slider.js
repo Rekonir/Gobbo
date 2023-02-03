@@ -71,7 +71,7 @@ $(function () {
 
     //База фракций//
     const BEASTS_OF_CHAOS = {
-        Name: 'BEASTS OF CHAOS',
+        Name: 'Beasts Of Chaos',
         Shoot: 3,
         HtH: 7,
         Wound: 6,
@@ -82,7 +82,7 @@ $(function () {
 
     }
     const BLADES_OF_KHORNE_DAEMONS = {
-        Name: 'BLADES OF KHORNE: DAEMONS',
+        Name: 'Blades Of Khorne: Daemons',
         Shoot: 2,
         HtH: 9,
         Wound: 6,
@@ -93,7 +93,7 @@ $(function () {
 
     }
     const BLADES_OF_KHORNE_BLOODBOUND = {
-        Name: 'BLADES OF KHORNE: BLOODBOUND',
+        Name: 'Blades Of Khorne: Bloodbound',
         Shoot: 1,
         HtH: 8,
         Wound: 5,
@@ -104,7 +104,7 @@ $(function () {
 
     }
     const DISCIPLES_OF_TZEENTCH_DAEMONS = {
-        Name: 'DISCIPLES OF TZEENTCH: DAEMONS',
+        Name: 'Disciples Of Tzeentch: Daemons',
         Shoot: 9,
         HtH: 3,
         Wound: 2,
@@ -115,7 +115,7 @@ $(function () {
 
     }
     const DISCIPLES_OF_TZEENTCH_ARCANITES = {
-        Name: 'DISCIPLES OF TZEENTCH: ARCANITES',
+        Name: 'Disciples Of Tzeentch: Arcanites',
         Shoot: 8,
         HtH: 4,
         Wound: 4,
@@ -126,7 +126,7 @@ $(function () {
 
     }
     const MAGGOTKIN_OF_NURGLE_AEMONS = {
-        Name: 'MAGGOTKIN OF NURGLE: DAEMONS',
+        Name: 'Maggotkin Of Nurgle: Daemons',
         Shoot: 1,
         HtH: 4,
         Wound: 5,
@@ -137,7 +137,7 @@ $(function () {
 
     }
     const MAGGOTKIN_OF_NURGLE_ROTBRINGERS = {
-        Name: 'MAGGOTKIN OF NURGLE: ROTBRINGERS',
+        Name: 'Maggotkin Of Nurgle: Rotbringers',
         Shoot: 1,
         HtH: 6,
         Wound: 5,
@@ -148,7 +148,7 @@ $(function () {
 
     }
     const HEDONITES_OF_SLAANESH_DAEMONS = {
-        Name: 'HEDONITES OF SLAANESH: DAEMONS',
+        Name: 'Hedonites Of Slaanesh: Daemons',
         Shoot: 2,
         HtH: 6,
         Wound: 4,
@@ -159,7 +159,7 @@ $(function () {
 
     }
     const HEDONITES_OF_SLAANESH_SYBARITES = {
-        Name: 'HEDONITES OF SLAANESH: SYBARITES',
+        Name: 'Hedonites Of Slaanesh: Sybarites',
         Shoot: 2,
         HtH: 4,
         Wound: 3,
@@ -170,7 +170,7 @@ $(function () {
 
     }
     const SKAVEN = {
-        Name: 'SKAVEN',
+        Name: 'Skaven',
         Shoot: 7,
         HtH: 4,
         Wound: 2,
@@ -181,7 +181,7 @@ $(function () {
 
     }
     const SLAVES_TO_DARKNESSEN = {
-        Name: 'SLAVES TO DARKNESS',
+        Name: 'Slaves To Darkness',
         Shoot: 1,
         HtH: 6,
         Wound: 5,
@@ -192,7 +192,7 @@ $(function () {
 
     }
     const IRON_GOLEM = {
-        Name: 'IRON GOLEM',
+        Name: 'Iron Golem',
         Shoot: 1,
         HtH: 5,
         Wound: 5,
@@ -202,7 +202,7 @@ $(function () {
         Warcry: true
     }
     const UNTAMED_BEASTS = {
-        Name: 'UNTAMED BEASTS',
+        Name: 'Untamed Beasts',
         Shoot: 2,
         HtH: 4,
         Wound: 4,
@@ -212,7 +212,7 @@ $(function () {
         Warcry: true
     }
     const CORVUS_CABAL = {
-        Name: 'CORVUS CABAL',
+        Name: 'Corvus Cabal',
         Shoot: 1,
         HtH: 4,
         Wound: 3,
@@ -222,7 +222,7 @@ $(function () {
         Warcry: true
     }
     const CYPHER_LORDS = {
-        Name: 'CYPHER LORDS',
+        Name: 'Cypher Lords',
         Shoot: 1,
         HtH: 4,
         Wound: 3,
@@ -232,7 +232,7 @@ $(function () {
         Warcry: true
     }
     const THE_UNMADE = {
-        Name: 'THE UNMADE',
+        Name: 'The Unmade',
         Shoot: 1,
         HtH: 4,
         Wound: 3,
@@ -242,7 +242,7 @@ $(function () {
         Warcry: true
     }
     const SPLINTERED_FANG = {
-        Name: 'SPLINTERED FANG',
+        Name: 'Splintered Fang',
         Shoot: 2,
         HtH: 4,
         Wound: 4,
@@ -252,7 +252,7 @@ $(function () {
         Warcry: true
     }
     const SCIONS_OF_THE_FLAME = {
-        Name: 'SCIONS OF THE FLAME',
+        Name: 'Scions Of The Flame',
         Shoot: 1,
         HtH: 5,
         Wound: 4,
@@ -262,7 +262,7 @@ $(function () {
         Warcry: true
     }
     const SPIRE_TYRANTS = {
-        Name: 'SPIRE TYRANTS',
+        Name: 'Spire Tyrants',
         Shoot: 1,
         HtH: 4,
         Wound: 3,
@@ -272,7 +272,7 @@ $(function () {
         Warcry: true
     }
     const DARKOATH_SAVAGERS = {
-        Name: 'DARKOATH SAVAGERS',
+        Name: 'Darkoath Savagers',
         Shoot: 1,
         HtH: 4,
         Wound: 3,
@@ -282,7 +282,7 @@ $(function () {
         Warcry: true
     }
     const TARANTULOS_BROOD = {
-        Name: 'TARANTULOS BROOD',
+        Name: 'Tarantulos Brood',
         Shoot: 1,
         HtH: 4,
         Wound: 2,
@@ -292,7 +292,7 @@ $(function () {
         Warcry: true
     }
     const FLESH_EATER_COURTS = {
-        Name: 'FLESH-EATER COURTS',
+        Name: 'Flesh-eater Courts',
         Shoot: 1,
         HtH: 6,
         Wound: 6,
@@ -302,7 +302,7 @@ $(function () {
         Warcry: false
     }
     const NIGHTHAUNT = {
-        Name: 'NIGHTHAUNT',
+        Name: 'Nighthaunt',
         Shoot: 3,
         HtH: 4,
         Wound: 4,
@@ -312,7 +312,7 @@ $(function () {
         Warcry: false
     }
     const OSSIARCH_BONEREAPERS = {
-        Name: 'OSSIARCH BONEREAPERS',
+        Name: 'Ossiarch BonereaperS',
         Shoot: 2,
         HtH: 5,
         Wound: 5,
@@ -322,7 +322,7 @@ $(function () {
         Warcry: false
     }
     const SOULBLIGHT_GRAVELORDS = {
-        Name: 'SOULBLIGHT GRAVELORDS',
+        Name: 'Soulblight Gravelords',
         Shoot: 1,
         HtH: 4,
         Wound: 4,
@@ -332,7 +332,7 @@ $(function () {
         Warcry: false
     }
     const GLOOMSPITE_GITZ = {
-        Name: 'GLOOMSPITE GITZ',
+        Name: 'Gloomspite Gitz',
         Shoot: 3,
         HtH: 3,
         Wound: 3,
@@ -342,7 +342,7 @@ $(function () {
         Warcry: false
     }
     const BONESPLITTERZ = {
-        Name: 'BONESPLITTERZ',
+        Name: 'Bonesplitterz',
         Shoot: 2,
         HtH: 5,
         Wound: 4,
@@ -352,7 +352,7 @@ $(function () {
         Warcry: false
     }
     const IRONJAWZ = {
-        Name: 'IRONJAWZ',
+        Name: 'Ironjawz',
         Shoot: 1,
         HtH: 4,
         Wound: 6,
@@ -362,7 +362,7 @@ $(function () {
         Warcry: false
     }
     const KRULEBOYZ = {
-        Name: 'KRULEBOYZ',
+        Name: 'Kruleboyz',
         Shoot: 4,
         HtH: 3,
         Wound: 4,
@@ -372,7 +372,7 @@ $(function () {
         Warcry: false
     }
     const OGOR_MAWTRIBES = {
-        Name: 'OGOR MAWTRIBES',
+        Name: 'Ogor Mawtribes',
         Shoot: 5,
         HtH: 9,
         Wound: 6,
@@ -382,7 +382,7 @@ $(function () {
         Warcry: false
     }
     const DAUGHTERS_OF_KHAINE = {
-        Name: 'DAUGHTERS OF KHAINE',
+        Name: 'Daughters Of Khaine',
         Shoot: 4,
         HtH: 4,
         Wound: 4,
@@ -392,7 +392,7 @@ $(function () {
         Warcry: false
     }
     const KHAINITE_SHADOWSTALKERS = {
-        Name: 'KHAINITE SHADOWSTALKERS',
+        Name: 'Khainite Shadowstalkers',
         Shoot: 2,
         HtH: 4,
         Wound: 2,
@@ -402,7 +402,7 @@ $(function () {
         Warcry: true
     }
     const FYRESLAYERS = {
-        Name: 'FYRESLAYERS',
+        Name: 'Fyreslayers',
         Shoot: 2,
         HtH: 4,
         Wound: 4,
@@ -412,7 +412,7 @@ $(function () {
         Warcry: false
     }
     const IDONETH_DEEPKIN = {
-        Name: 'FIDONETH DEEPKIN',
+        Name: 'Fidoneth Deepkin',
         Shoot: 2,
         HtH: 4,
         Wound: 4,
@@ -422,7 +422,7 @@ $(function () {
         Warcry: false
     }
     const KHARADRON_OVERLORDS = {
-        Name: 'KHARADRON OVERLORDS',
+        Name: 'Kharadron Overlords',
         Shoot: 10,
         HtH: 3,
         Wound: 5,
@@ -432,7 +432,7 @@ $(function () {
         Warcry: false
     }
     const LUMINETH_REALM_LORDS = {
-        Name: 'LUMINETH REALM-LORDS',
+        Name: 'Lumineth Realm-lords',
         Shoot: 8,
         HtH: 5,
         Wound: 4,
@@ -442,7 +442,7 @@ $(function () {
         Warcry: false
     }
     const SERAPHON = {
-        Name: 'SERAPHON',
+        Name: 'Seraphon',
         Shoot: 4,
         HtH: 4,
         Wound: 4,
@@ -452,7 +452,7 @@ $(function () {
         Warcry: false
     }
     const SYLVANETH = {
-        Name: 'SYLVANETH',
+        Name: 'Sylvaneth',
         Shoot: 3,
         HtH: 4,
         Wound: 4,
@@ -462,7 +462,7 @@ $(function () {
         Warcry: false
     }
     const CITIES_OF_SIGMAR = {
-        Name: 'CITIES OF SIGMAR',
+        Name: 'Cities Of Sigmar',
         Shoot: 7,
         HtH: 4,
         Wound: 4,
@@ -472,7 +472,7 @@ $(function () {
         Warcry: false
     }
     const THUNDERSTRIKE_STORMCASTS = {
-        Name: 'STORMCASTS ETERNALS:THUNDERSTRIKE',
+        Name: 'Stormcasts Eternals: Thunderstrike',
         Shoot: 3,
         HtH: 8,
         Wound: 7,
@@ -482,7 +482,7 @@ $(function () {
         Warcry: false
     }
     const STORMCAST_ETERNALS_SACROSANCT_CHAMBER = {
-        Name: 'STORMCAST ETERNALS; SACROSANCT CHAMBER',
+        Name: 'Stormcast Eternals: Sacrosanct Chamber',
         Shoot: 4,
         HtH: 6,
         Wound: 6,
@@ -492,7 +492,7 @@ $(function () {
         Warcry: false
     }
     const STORMCAST_ETERNALS_VANGUARD_AUXILIARY_CHAMBER = {
-        Name: 'STORMCAST ETERNALS: VANGUARD AUXILIARY CHAMBER',
+        Name: 'Stormcast Eternals: Vanguard Auxiliary Chamber',
         Shoot: 10,
         HtH: 5,
         Wound: 6,
@@ -502,7 +502,7 @@ $(function () {
         Warcry: false
     }
     const STORMCAST_ETERNALS_WARRIOR_CHAMBER = {
-        Name: 'STORMCAST ETERNALS: WARRIOR CHAMBER',
+        Name: 'Stormcast Eternals: Warrior Chamber',
         Shoot: 4,
         HtH: 6,
         Wound: 6,
@@ -610,13 +610,13 @@ $(function () {
     // Вывод рузельтата
     var AllResult = []
     var str = ''
-    $('.chooser').on('click', () => {
+    $('.content').on('click', () => {
         AllResult = _.intersection(ShootResult, HtHResult, WoundResult, MoveResult, SizeResult, VarietyResult)
-        if (AllResult == []) {
-            AllResult = ['Ничего не найдено']
+        if (AllResult[1] == undefined) {
+            AllResult = ['Гоббо ничего не смог найти для тебя.']
         }
         for (var i = 0; i < AllResult.length; i++) {
-            str += `${AllResult[i]} <br>`
+            str += `${AllResult[i]} <br> <br>`
         }
         result.html(str)
         str = ''
