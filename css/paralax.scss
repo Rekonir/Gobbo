@@ -6,17 +6,16 @@
         url("/fonts/antikvarika.ttf") format("truetype"), url("/fonts/antikvarika.svg#antikvarika") format("svg"); /* Chrome < 4, Legacy iOS */
 }
 $srift: "Antikvarika", "Times New Roman", serif;
-$Wbr: #5b3320;
-$Dbr: #382519;
+$br1: rgba(56, 37, 25, 1);
+$br2: rgba(91, 51, 32, 1);
+$br3: rgba(107, 67, 38, 1);
+$br4: rgb(226, 204, 177);
+$Gradbr: radial-gradient(circle, $br1 0%, $br2 35%, $br3 70%, $br4 100%);
 $Wpur: rgb(144, 52, 147);
 $Dpur: rgb(46, 18, 41);
-$Gradbr: radial-gradient(
-    circle,
-    rgba(56, 37, 25, 1) 0%,
-    rgba(91, 51, 32, 1) 35%,
-    rgba(107, 67, 38, 1) 70%,
-    rgb(226, 204, 177) 100%
-);
+$Vk:rgb(0,119,255);
+$WVk: rgb(113,170,235);
+$Gradblue: linear-gradient(90deg, $WVk 0%, $Vk 100%);
 
 body {
     box-sizing: border-box;
@@ -44,10 +43,13 @@ p {
     cursor: default;
 }
 label {
-    font-size: 20px;
+    font-size: 25px;
     font-family: $srift;
     margin: 0;
-    padding: 0;
+    padding: 0px;
+    line-height: 25px;
+    text-align: center;
+    font-weight: bold;
     cursor: default;
 }
 .paralax {
@@ -104,7 +106,31 @@ label {
             gap: 35px;
             flex-direction: column;
             .slider__box {
+                position: relative;
                 width: 95%;
+                text-align: center;
+            }
+            .slider__box::before {
+                font-size: 25px;
+                font-family: $srift;
+                text-align: center;
+                font-weight: bold;
+                cursor: default;
+                position: absolute;
+                top: 0;
+                left: -3px;
+                content: "-";
+                text-align: center;
+            }
+            .slider__box::after {
+                font-size: 25px;
+                font-family: $srift;
+                font-weight: bold;
+                cursor: default;
+                position: absolute;
+                top: 0;
+                right: -3px;
+                content: "+";
                 text-align: center;
             }
         }
@@ -125,20 +151,86 @@ label {
                 margin: auto;
             }
         }
+        .chooser__result::-webkit-scrollbar {
+            width: 12px;
+        }
+        .chooser__result::-webkit-scrollbar-track {
+            //background: #e2ccb1;
+            border-radius: 200px;
+            //border: 1px solid #c58b4d
+        }
+        .chooser__result::-webkit-scrollbar-thumb {
+            background: $Gradbr;
+            border-radius: 200px;
+            width: 11px;
+            box-shadow: 0px 0px 20px 2px $br4, 0px 0px 10px 2px $br4 inset;
+            //border: 1px solid rgb(126, 89, 5);
+        }
     }
 }
-.chooser__result::-webkit-scrollbar {
-    width: 12px;
+
+a.group:active,
+a.group:hover,
+a.group,
+p.group__text {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
 }
-.chooser__result::-webkit-scrollbar-track {
-    //background: #e2ccb1;
-    border-radius: 200px;
-    //border: 1px solid #c58b4d 
+.group {
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 5vh;
+    right: 5vw;
+    width: 360px;
+    height: 60px;
+    background: $Gradblue;
+    border-radius: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+    z-index: 2;
+    box-shadow: 0px 0px 35px 2px $Vk, 0px 0px 5px 1px $Vk inset;
+    .group__logo {
+        box-sizing: border-box;
+        width: 60px;
+        height: 100%;
+        background: url(/file/Gobbo.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 4px solid $WVk;
+        border-radius: 50%;
+    }
+    .group__textbox {
+        text-align: center;
+        visibility: visible;
+        p.group__text {
+            font-size: 20px;
+            font-family: $srift;
+            line-height: 20px;
+            text-align: center;
+            font-weight: 600;
+            text-decoration: none;
+        }
+    }
 }
-.chooser__result::-webkit-scrollbar-thumb {
-    background: $Gradbr; 
-    border-radius: 200px;
-    width: 11px; 
-    box-shadow: 0px 0px 35px 10px rgba(226, 204, 177, 0.5), 0px 0px 10px 2px rgba(226, 204, 177, 0.5) inset;;
-    //border: 1px solid rgb(126, 89, 5);
+.group_active {
+    transform-origin: right;
+    width: 80px;
+    height: 80px;
+    transition: 2s;
+    gap: 0;
+    .group__logo_active {
+        width: 80px;
+        height: 80px;
+        transform-origin: right;
+        transition: 2s;
+    }
+    .group__textbox_active {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
 }

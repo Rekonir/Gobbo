@@ -1,5 +1,5 @@
 $(function () {
-    var checkWarcry = $('#Warcry')
+    var checkWarcry = $('#WarcryCheck')
     var result = $('#result')
 
     var sliderShoot = $('.slider')[0];
@@ -518,6 +518,8 @@ $(function () {
     var MoveResult = []
     var SizeResult = []
     var VarietyResult = []
+    var WarcryResult = []
+
     for (var i = 0; i < WarcryFraction.length; i++) {
         ShootResult.push(WarcryFraction[i].Name),
             HtHResult.push(WarcryFraction[i].Name),
@@ -607,11 +609,24 @@ $(function () {
         }
     })
 
+    checkWarcry.on('click', () => {
+        WarcryResult = []
+        for (var i = 0; i < WarcryFraction.length; i++) {
+            if (checkWarcry.prop('checked') === false && WarcryFraction[i].Warcry === false) {
+                WarcryResult.push(WarcryFraction[i].Name)
+            }
+            else if (checkWarcry.prop('checked') === true) {
+                WarcryResult.push(WarcryFraction[i].Name)
+            }
+        }
+    })
+
+
     // Вывод рузельтата
     var AllResult = []
     var str = ''
     $('.content').on('click', () => {
-        AllResult = _.intersection(ShootResult, HtHResult, WoundResult, MoveResult, SizeResult, VarietyResult)
+        AllResult = _.intersection(ShootResult, HtHResult, WoundResult, MoveResult, SizeResult, VarietyResult, WarcryResult)
         if (AllResult[1] == undefined) {
             AllResult = ['Гоббо ничего не смог найти для тебя.']
         }

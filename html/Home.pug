@@ -2,7 +2,7 @@ html(lang="ru")
   head 
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
-    title Подбор фракции
+    title Подбор фракции Warcry
     link(rel="icon", href="/file/Icon.png")
     link(rel="stylesheet", href="/css/paralax.css")
     link(rel="stylesheet", href="/lib/slider/nouislider.css")
@@ -20,29 +20,32 @@ html(lang="ru")
       .chooser
         .chooser__sliders
           .slider__box
-            h3 Стрельба
+            h3.slider__header Стрельба
             .slider#Shoot
           .slider__box
-            h3 Ближний бой
+            h3.slider__header Ближний бой
             .slider#HtH
           .slider__box
-            h3 Живучесть
+            h3.slider__header Живучесть
             .slider#Wound
           .slider__box
-            h3 Скорость
+            h3.slider__header Скорость
             .slider#Move
           .slider__box
-            h3 Размер банды
+            h3.slider__header Размер банды
             .slider#Size
           .slider__box
-            h3 Разнообразие воинов
+            h3.slider__header Разнообразие воинов
             .slider#Variety
-          .slider__box
+          .slider__checkbox
             label(for="WarcryCheck") Включать банды Warcry?
-            input(type="checkbox", name="WarcryCheck")#Warcry
+            input(type="checkbox", name="WarcryCheck", checked)#WarcryCheck
         .chooser__result
             p.result#result Beasts Of Chaos <br> <br>Blades Of Khorne: Daemons <br> <br>Blades Of Khorne: Bloodbound <br> <br>Disciples Of Tzeentch: Daemons <br> <br>Disciples Of Tzeentch: Arcanites <br> <br>Maggotkin Of Nurgle: Daemons <br> <br>Maggotkin Of Nurgle: Rotbringers <br> <br>Hedonites Of Slaanesh: Daemons <br> <br>Hedonites Of Slaanesh: Sybarites <br> <br>Skaven <br> <br>Slaves To Darkness <br> <br>Iron Golem <br> <br>Untamed Beasts <br> <br>Corvus Cabal <br> <br>Cypher Lords <br> <br>The Unmade <br> <br>Splintered Fang <br> <br>Scions Of The Flame <br> <br>Spire Tyrants <br> <br>Darkoath Savagers <br> <br>Tarantulos Brood <br> <br>Flesh-eater Courts <br> <br>Nighthaunt <br> <br>Ossiarch BonereaperS <br> <br>Soulblight Gravelords <br> <br>Gloomspite Gitz <br> <br>Bonesplitterz <br> <br>Ironjawz <br> <br>Kruleboyz <br> <br>Ogor Mawtribes <br> <br>Daughters Of Khaine <br> <br>Khainite Shadowstalkers <br> <br>Fyreslayers <br> <br>Fidoneth Deepkin <br> <br>Kharadron Overlords <br> <br>Lumineth Realm-lords <br> <br>Seraphon <br> <br>Sylvaneth <br> <br>Cities Of Sigmar <br> <br>Stormcasts Eternals: Thunderstrike <br> <br>Stormcast Eternals: Sacrosanct Chamber <br> <br>Stormcast Eternals: Vanguard Auxiliary Chamber <br> <br>Stormcast Eternals: Warrior Chamber <br> <br>
-
+      a.group(href="https://vk.com/gobba_cave", target="_blank" )
+        .group__logo
+        .group__textbox
+          p.group__text Приглашаю тебя в гости!
 
 
 
