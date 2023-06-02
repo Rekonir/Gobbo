@@ -59,10 +59,10 @@ label {
   background-repeat: no-repeat;
 }
 .paralax .paralax__fon1 {
-  background: url(/file/fon1.jpg);
+  background: url(../file/fon1.jpg);
 }
 .paralax .paralax__fon2 {
-  background: url(/file/fon2.png);
+  background: url(../file/fon2.png);
 }
 
 .content {
@@ -82,7 +82,7 @@ label {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  background: url(/file/book.png);
+  background: url(../file/book.png);
   background-size: contain;
   background-repeat: no-repeat;
   gap: 5px;
